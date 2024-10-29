@@ -1,0 +1,237 @@
+
+.admin-panel {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:   #00134d;
+    font-weight: bold;
+  }
+  
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .table-container {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+  }
+  
+ 
+  .table-container::-webkit-scrollbar {
+    height: 8px; 
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  
+  .table {
+    width: 100%; 
+    max-width: 1200px;
+    margin: 20px auto; 
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .th{
+    background-color: #00134d;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .th, .td {
+    padding: 8px 10px; 
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .th, .td {
+      padding: 6px 8px; 
+      font-size: 12px; 
+    }
+    .table {
+      font-size: 12px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .th, .td {
+      padding: 4px 6px; 
+      font-size: 10px; 
+    }
+  }
+  
+  
+  
+  .button {
+    height: 30px;
+    width: 90px;
+    font-size: 12px; 
+    color: #ffffff;
+    background-color: #00134d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .button:hover {
+    background-color: #a1aed4; 
+  }
+  
+  .button:active {
+    background-color: #00134d; 
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(39, 60, 117, 0.5);
+  }
+  
+  .th {
+    background-color: #00134d;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  .tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  
+  .td {
+    color: #000; 
+  }
+  
+  
+  .no-data {
+    text-align: center;
+    color: #999;
+  }
+  
+  
+  .edit-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-form h2 {
+    margin-bottom: 20px;
+    color: #273c75;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    width: 48%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .edit-section {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  }
+
+  .history-button {
+    height: 30px;
+    width: 150px; 
+    font-size: 14px;
+    color: #ffffff;
+    background-color:  #00134d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; 
+    display: inline-block; 
+  }
+  
+  /* Hover and active states */
+  .history-button:hover {
+    background-color: #a1aed4; /* Lighter color on hover */
+  }
+  
+  .history-button:active {
+    background-color: #00134d; /* Darker green when clicked */
+  }
+  
+  .history-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(39, 60, 117, 0.5); /* Slight focus glow */
+  }
+  
+  /* Button Container Styling */
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add space above the button container */
+    margin-bottom: 20px;
+  }
+  
+

@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dashboard {
+  background-color: #f8f9fa;
+  padding: 30px;
+  max-width: 90%; /* Full width */
+  border-radius: 8px;
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d5db;
+}
+
+/* Section titles (Personal Details, College Details, etc.) */
+h1 {
+  font-size: 1.5rem;
+  color: #00134d;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+
+.h2 {
+  font-size: 2rem;
+  color: #00134d;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00134d;;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Cards container for holding each set of data */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Each individual card */
+.card {
+  background-color: #e9ecef; /* Light grey color similar to the image */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #d1d5db; /* Light border for textbox effect */
+}
+
+/* Text within cards */
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Darker text color for better contrast */
+}
+
+/* Card labels (e.g., "Admission No:") */
+.card strong {
+  font-weight: bold;
+  margin-right: 5px;
+  color: black;
+}
+/* Specific styles for the Reason box */
+.reason-box {
+  grid-column: span 2; /* Make it span across both columns */
+  margin-top: 20px; 
+  margin-bottom: 25px;/* Add space above the Reason box */
+  background-color: #e9ecef; /* Match the light grey color */
+  padding: 2px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #d1d5db; /* Light border for textbox effect */
+  color: black;
+}
+.reason-box p {
+  color: #070708 !important; /* Force change on text inside the reason box */
+}
+
+/* Optionally, you can modify the card styles to remove margin */
+.cards-container .card {
+  margin-bottom: 0; /* Remove bottom margin to avoid collision */
+}
+
+/* Responsive design for mobile view */
+@media screen and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    font-size: 0.9rem;
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+  }
+}

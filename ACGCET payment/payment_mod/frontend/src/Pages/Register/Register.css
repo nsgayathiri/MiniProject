@@ -1,0 +1,122 @@
+/* Base styles for the register form */
+
+.register-form {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+ max-width: 700px; /* Set a maximum width for better form control */
+  margin: auto; /* Center the form horizontally */
+  height: auto;
+  overflow-y: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(119, 117, 117, 0.1);
+  /* border: 6px solid rgba(11, 3, 3, 0.3); */
+}
+.text-center1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  width: 100%;
+  margin: 0 auto; /* Center the form container horizontally */
+}
+
+
+
+.input-group-div {
+  position: relative; /* Make the container relative for absolute positioning of the eye icon */
+  margin-bottom: 20px; /* Add some space between input fields */
+}
+
+.form-container h1{
+color: #00134d;
+}
+
+.register-input,
+.register-select {
+  width: 100%;
+  padding: 10px; /* Slightly more padding for better readability */
+  /*margin: 10px 0; /* Adjusted margin for better spacing */
+  border: 1px solid #00134d; /* More subtle border color */
+  border-radius: 5px;
+  outline: none;
+  color:grey;
+  background: rgba(239, 239, 239, 0.9);
+  box-sizing: border-box;
+}
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Position the icon inside the input field */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333; /* You can change the color */
+  z-index: 2; /* Make sure it appears on top of the input */
+}
+
+.register-input:focus,
+.register-select:focus {
+  background: rgba(216, 211, 211, 0.9);
+  border-color: #999; 
+  top: -8px;
+}
+
+
+.register-button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color:  #00134d;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.login-p {
+  
+  padding: 10px;
+  font-size: 14px;
+  background: #EBEAEA;
+}
+.login-a{
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .register-form {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Media query for mobile phones */
+@media (min-width: 360px) {
+  .register-form {
+    padding: 4px;
+    font-size: 12px;
+    width: 90%; /* Use more of the available screen width */
+  }
+  
+  .input-group {
+    gap: 10px; /* Reduce gap between elements */
+  }
+  
+  .input-group-div {
+    flex: 1;
+    min-width: 0; /* Allow flexibility in width */
+  }
+}
+
+
+@media (max-width:360px){
+  .input-group-div {
+    padding: 10px;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 35px; */
+  }
+}

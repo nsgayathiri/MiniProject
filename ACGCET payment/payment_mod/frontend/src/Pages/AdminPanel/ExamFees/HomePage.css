@@ -1,0 +1,36 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .home-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .home-button:focus {
+    outline: none;
+  }
+  

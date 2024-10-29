@@ -1,0 +1,122 @@
+.provisional-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .provisional-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .provisional-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .provisional-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .provisional-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .provisional-list-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .provisional-list-item:nth-child(even) {
+    background: #e9ecef;
+  }
+  
+  .provisional-total {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .provisional-button {
+    align-self: center;
+    background-color: #108325;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .provisional-button:hover {
+    background-color: #000000;
+  }
+
+.payment-mode-container,
+.transaction-id-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-mode-select,
+.transaction-id-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+
+.payment-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; /* Space between items */
+}
+
+.transaction-id-container,
+.date-time-container,
+.time-container,
+.qr-code-container {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Make sure each container takes full width */
+}
+
+.date-time-container {
+    display: flex;
+    justify-content: center; /* Center align date and time inputs */
+    gap: 1rem; /* Space between date and time inputs */
+    width: 100%; /* Make sure this takes full width */
+}
+
+.transaction-id-input,
+.transaction-date-input,
+.transaction-time-input {
+    margin-top: 0.5rem; /* Add some space between label and input */
+    padding: 0.5rem; /* Add some padding to the input */
+    width: 100%; /* Make input take the full width */
+    max-width: 300px; /* Set a max width */
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column; /* Stack QR code and button vertically */
+    align-items: center; /* Center align items */
+    margin-top: 1rem; /* Add space above QR code */
+}

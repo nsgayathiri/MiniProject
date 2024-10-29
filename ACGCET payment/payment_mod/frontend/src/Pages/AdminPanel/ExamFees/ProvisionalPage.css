@@ -1,0 +1,81 @@
+.provisional-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .provisional-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .provisional-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .provisional-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .provisional-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .provisional-list-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .provisional-list-item:nth-child(even) {
+    background: #e9ecef;
+  }
+  
+  .provisional-total {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .provisional-button {
+    align-self: center;
+    background-color: #108325;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .provisional-button:hover {
+    background-color: #000000;
+  }
+
+.payment-mode-container,
+.transaction-id-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-mode-select,
+.transaction-id-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
